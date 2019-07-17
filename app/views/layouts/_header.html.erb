@@ -1,0 +1,8 @@
+<ul class="nav navbar-nav navbar-right">
+	<li><% if user_signed_in? %>
+		<%= link_to current_user.email, user_show_path(current_user) %></li>
+		<li><%= link_to 'signout', destroy_user_session_path, method: :delete%></li>
+		<% else %>
+		<li><%= link_to 'Sign In', new_user_session_path %></li>
+		<% end %>
+	</ul>
