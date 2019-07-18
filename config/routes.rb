@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :dashboards
+
 	get 'user/show'
   get 'user/edit'
   put 'user/update'
