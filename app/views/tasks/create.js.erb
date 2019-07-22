@@ -1,7 +1,6 @@
 // create.js.erb
 <%- if @task.errors.blank? -%>
-	$('#backlog').append('<%= @task.title %><br>').append('<%= @task.description %><br>')
-  onsubmit = document.getElementById('task_due_date').innerHTML = Date()
+	$('#backlog').append('<%= @task.title %><br>').append('<%= @task.description %><br>').append('<%= @task.due_date %><br>')
 	alert('inside create.js.erb: success')
 
 <%- else -%>
