@@ -20,17 +20,17 @@
 
   <div class="modal-body">
     <div class="field">
-      <%= form.label :title %>
-      <%= form.text_field :title %>
+      <%= form.label :title %><br>
+      <%= form.text_field :title, required: true %>
     </div>
 
     <div class="field">
-      <%= form.label :description %>
-      <%= form.text_area :description %>
+      <%= form.label :description %><br>
+      <%= form.text_area :description, required: true %>
     </div>
 
     <div class="field">
-      <%= form.label :due_date %>
+      <%= form.label :due_date %><br>
       <%= form.date_select :due_date %>
     </div>
 
