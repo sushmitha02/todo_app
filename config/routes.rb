@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get 'page/home'
   get 'page/dashboard'
 
-  root to: 'page#home'
+  root to: 'page#dashboard'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

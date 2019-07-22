@@ -1,5 +1,5 @@
 <div class="modal-content">
-  <%= form_with(model: task, local: true) do |form| %>
+  <%= form_for task, remote: true do |form| %>
   <% if task.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
@@ -20,7 +20,6 @@
 
   <div class="modal-body">
     <div class="field">
-      <%= form.hidden_field :user_id, value: current_user.id %>
       <%= form.label :title %>
       <%= form.text_field :title %>
     </div>
