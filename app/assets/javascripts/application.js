@@ -11,9 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require rails-ujs
 //= require turbolinks
 //= require popper
 //= require bootstrap-sprockets
 
 //= require page
+//= require draggable_n_droppable
