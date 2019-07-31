@@ -6,4 +6,5 @@ class Task
   field :due_date, type: Date
   
   embedded_in :user
+
 end

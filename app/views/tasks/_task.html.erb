@@ -15,6 +15,6 @@
 	 <!-- Modal -->
   <div class="modal fade" data-backdrop="static" id="labelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <%= render 'labels/form', label: @label%>
+      <%= render 'labels/form', label: @label, task_id: @task.id %>
     </div>
   </div>
